@@ -28,12 +28,7 @@
                                     <td>{{ $product->Qty }}</td>
                                     <td>{{ $product->KategoriAA }}</td>
                                     <td>
-                                        <a href="{{ route('product.edit', ['id' => $product->id_product]) }}">Edit Produk</a>
-                                        <form action="{{ route('product.delete', ['id' => $product->id_product]) }}" method="POST" style="display: inline;">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger">Hapus</button>
-                                        </form>
+
                                     </td>
                                 </tr>
                             @endforeach

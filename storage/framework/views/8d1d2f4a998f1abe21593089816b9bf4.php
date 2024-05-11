@@ -26,12 +26,7 @@
                                     <td><?php echo e($product->Qty); ?></td>
                                     <td><?php echo e($product->KategoriAA); ?></td>
                                     <td>
-                                        <a href="<?php echo e(route('product.edit', ['id' => $product->id_product])); ?>">Edit Produk</a>
-                                        <form action="<?php echo e(route('product.delete', ['id' => $product->id_product])); ?>" method="POST" style="display: inline;">
-                                            <?php echo csrf_field(); ?>
-                                            <?php echo method_field('DELETE'); ?>
-                                            <button type="submit" class="btn btn-danger">Hapus</button>
-                                        </form>
+
                                     </td>
                                 </tr>
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

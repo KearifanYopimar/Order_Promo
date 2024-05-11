@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\SoftDeletes; // Import SoftDeletes
 
 class Product extends Model
@@ -22,10 +21,4 @@ class Product extends Model
         'image',
         'KategoriAA',
     ];
-=======
-
-class Product extends Model
-{
-    use HasFactory;
->>>>>>> 34aca4c04279cf1cb0308240c7e2a79c6ea6a443
 }

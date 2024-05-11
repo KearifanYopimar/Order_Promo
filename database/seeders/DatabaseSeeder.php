@@ -2,18 +2,12 @@
 
 namespace Database\Seeders;
 
-<<<<<<< HEAD
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\User;
-=======
->>>>>>> 34aca4c04279cf1cb0308240c7e2a79c6ea6a443
-use Faker\Factory;
 use Illuminate\Database\Seeder;
+use Faker\Factory;
 use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
-<<<<<<< HEAD
     /**
      * Seed the application's database.
      *
@@ -87,9 +81,8 @@ class DatabaseSeeder extends Seeder
             'urutan_menu' => 2,
             'parent_menu' => 3
         ]);
-=======
-    public function run(): void
-    {
+
+        // Seed students
         $faker = Factory::create('id_ID');
         for ($i = 0; $i < 100; $i++) {
             DB::table('students')->insert([
@@ -99,6 +92,8 @@ class DatabaseSeeder extends Seeder
                 'id_teacher' => rand(1, 10)
             ]);
         }
+
+        // Seed teachers
         $faker = Factory::create('id_ID');
         for ($i = 0; $i < 10; $i++) {
             DB::table('teacher')->insert([
@@ -107,6 +102,5 @@ class DatabaseSeeder extends Seeder
                 'dob' => $faker->date('Y-m-d', now())
             ]);
         }
->>>>>>> 34aca4c04279cf1cb0308240c7e2a79c6ea6a443
     }
 }
